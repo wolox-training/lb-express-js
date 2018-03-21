@@ -1,0 +1,19 @@
+.title {
+  color: $black;
+  font-size: $text-big;
+  margin: 43px 0;
+  position: relative;
+  padding-left: 60px;
+
+  &::before {
+    content: "";
+    width: 75px;
+    height: 100px;
+    position: absolute;
+    background: url("Assets/triangle.svg") no-repeat;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
