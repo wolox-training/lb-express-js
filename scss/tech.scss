@@ -1,0 +1,26 @@
+.tech {
+  display: flex;
+  flex-flow: column wrap;
+  width: 190px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  background-color: $green;
+}
+
+.tech-img {
+  width: 100px;
+}
+
+.tech-title,
+.tech-release {
+  padding: 5px 0;
+}
+
+.tech-release {
+  font-weight: bold;
+}
+
+.tech-desc {
+  padding: 15px 0;
+}
