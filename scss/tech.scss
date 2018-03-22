@@ -1,11 +1,27 @@
 .tech {
+  align-items: center;
+  background-color: $green;
+  border-radius: 5px;
   display: flex;
   flex-flow: column wrap;
-  width: 190px;
+  margin: 15px;
   padding: 10px;
-  align-items: center;
+  position: relative;
   text-align: center;
-  background-color: $green;
+  width: 190px;
+
+  &::before {
+    border-radius: 5px;
+    border: 1px solid $green;
+    content: '';
+    height: 241px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 189px;
+    z-index: -1;
+  }
 }
 
 .tech-img {
