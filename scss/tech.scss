@@ -14,29 +14,27 @@
     border-radius: 5px;
     border: 1px solid $green;
     content: '';
-    height: 241px;
+    height: 100%;
     margin: 10px;
     position: absolute;
-    right: 0;
+    left: -20px;
     top: -20px;
-    width: 189px;
+    width: 100%;
     z-index: -1;
   }
 }
 
 .tech-img {
+  height: 100px;
+  margin-bottom: 10px;
   width: 100px;
 }
 
 .tech-title,
 .tech-release {
-  padding: 5px 0;
+  margin-bottom: 15px;
 }
 
 .tech-release {
   font-weight: bold;
-}
-
-.tech-desc {
-  padding: 15px 0;
 }
