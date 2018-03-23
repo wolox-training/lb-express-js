@@ -19,9 +19,15 @@
     position: absolute;
     left: -20px;
     top: -20px;
+    transition: all 1s ease;
     width: 100%;
     z-index: -1;
   }
+}
+
+.tech:hover::before {
+    top: 0;
+    right: -20px;
 }
 
 .tech-img {
