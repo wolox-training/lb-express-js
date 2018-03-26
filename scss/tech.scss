@@ -1,0 +1,40 @@
+.tech {
+  align-items: center;
+  background-color: $green;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 15px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 190px;
+
+  &::before {
+    border-radius: 5px;
+    border: 1px solid $green;
+    content: '';
+    height: 100%;
+    margin: 10px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.tech-img {
+  height: 100px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+.tech-title,
+.tech-release {
+  margin-bottom: 15px;
+}
+
+.tech-release {
+  font-weight: bold;
+}
