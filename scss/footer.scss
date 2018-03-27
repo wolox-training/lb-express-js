@@ -1,0 +1,27 @@
+.footer {
+  align-items: center;
+  background-color: $blue;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 150px;
+  justify-content: center;
+}
+
+.footer * {
+  color: $white;
+}
+
+.ft-subtitle {
+  font-size: $text-medium;
+  margin: 20px 0 10px 0;
+}
+
+.wlogo2 {
+  height: 50px;
+}
+
+.ft-copyright {
+  align-self: flex-end;
+  font-size: $text-small;
+  margin-top: 20px;
+}
