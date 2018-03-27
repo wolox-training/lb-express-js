@@ -1,0 +1,22 @@
+.nav {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 0 10px $black;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.wlogo {
+  width: 110px;
+}
+
+.nav-title {
+  font-size: $text-medium;
+}
