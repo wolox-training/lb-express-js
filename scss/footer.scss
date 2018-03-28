@@ -3,26 +3,23 @@
   background-color: $blue;
   display: flex;
   flex-flow: column nowrap;
-  height: 150px;
-  justify-content: center;
+  padding: 30px 0 10px;
   width: 100%;
 }
 
-.footer * {
+.footer-subtitle {
   color: $white;
-}
-
-.ft-subtitle {
   font-size: $text-medium;
-  margin: 20px 0 10px 0;
+  margin-bottom: 10px;
 }
 
-.wlogo2 {
+.footer-logo {
   height: 50px;
+  margin-bottom: 20px;
 }
 
-.ft-copyright {
+.footer-copyright {
   align-self: flex-end;
+  color: $white;
   font-size: $text-small;
-  margin-top: 20px;
 }
