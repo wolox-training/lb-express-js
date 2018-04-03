@@ -17,3 +17,19 @@
   grid-column: 1;
   grid-row: 1/3;
 }
+
+@media only screen and (max-width: 1024px){
+  .tech-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+  }
+
+  .tech-list div:nth-child(1) {
+    border-right: 0;
+  }
+
+  .tech-list div:last-child {
+    border-bottom: 0;
+  }
+}
