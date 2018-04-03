@@ -1,15 +1,18 @@
 .tech {
-  align-items: center;
   //background-color: $green;
   //border-radius: 5px;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
-  margin: 15px;
-  padding: 10px;
+  height: 100%;
+  justify-content: center;
+  margin: 0 10px;
+  min-height: 300px;
+  padding: 10px 40px;
   position: relative;
   text-align: center;
   width: 190px;
-  min-height: 300px;
+  width: auto;
   //
   // &::before {
   //   border-radius: 5px;

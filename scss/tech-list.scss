@@ -1,17 +1,19 @@
 .tech-list {
+  align-items: center;
   display: grid;
   flex-flow: row wrap;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
   margin-bottom: 100px;
   max-width: 1050px;
   padding: 0 70px;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-items: center;
 }
 
 .tech-list div:nth-child(1) {
+  border-right: 1px solid $green;
   grid-column: 1;
   grid-row: 1/3;
 }
