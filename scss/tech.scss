@@ -25,3 +25,11 @@
 .tech-release {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1024px){
+  .tech {
+    border-bottom: 2px solid $green;
+    max-width: 250px;
+    padding-bottom: 20px;
+  }
+}

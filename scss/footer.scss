@@ -22,3 +22,9 @@
   color: $white;
   font-size: $text-small;
 }
+
+@media only screen and (max-width: 1024px){
+  .footer-copyright {
+    align-self: center;
+  }
+}
