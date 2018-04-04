@@ -1,33 +1,14 @@
 .tech {
   align-items: center;
-  background-color: $green;
-  border-radius: 5px;
   display: flex;
   flex-flow: column wrap;
-  margin: 15px;
-  padding: 10px;
+  height: 100%;
+  justify-content: center;
+  margin: 0 10px;
+  min-height: 300px;
+  padding: 10px 40px;
   position: relative;
   text-align: center;
-  width: 190px;
-
-  &::before {
-    border-radius: 5px;
-    border: 1px solid $green;
-    content: '';
-    height: 100%;
-    margin: 10px;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    transition: top 1s ease, left 1s ease;
-    width: 100%;
-    z-index: -1;
-  }
-}
-
-.tech:hover::before {
-  top: 0;
-  left: 0;
 }
 
 .tech-img {
