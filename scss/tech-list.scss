@@ -22,14 +22,13 @@
   .tech-list {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-
   }
 
-  .tech-list div:nth-child(1) {
+  .tech-list .tech:first-child {
     border-right: 0;
   }
 
-  .tech-list div:last-child {
+  .tech-list .tech:last-child {
     border-bottom: 0;
   }
 }
