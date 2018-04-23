@@ -5,7 +5,7 @@
     "node": "8.5.0",
     "npm": "5.3.0"
   },
-  "description": "Kickoff for web applications",
+  "description": "Vue layout training",
   "scripts": {
     "start": "node_modules/.bin/gulp",
     "pug-diff": "git diff --name-only --cached --relative | grep \\\\.pug$ | xargs ./node_modules/.bin/pug-lint",
@@ -22,11 +22,8 @@
   },
   "author": "Sebastian Balay <sebastian.balay@wolox.com.ar>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Wolox/frontend-bootstrap/issues"
-  },
-  "homepage": "https://github.com/Wolox/frontend-bootstrap",
   "dependencies": {
+    "apisauce": "^0.14.3",
     "vue": "^2.5.16"
   },
   "devDependencies": {

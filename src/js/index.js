@@ -1,6 +1,11 @@
+import { getTechs } from '../services/techService'
+
 const vm = new Vue({    // eslint-disable-line
   el: '#app',
   data: {
-    message: 'Front-End Bootstrap! Hola Laucha'
+    techs: []
+  },
+  created() {
+    getTechs().then(response => this.data.techs = response.data)
   }
 })
