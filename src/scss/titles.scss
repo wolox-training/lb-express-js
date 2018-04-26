@@ -2,18 +2,18 @@
   color: $black;
   font-size: $text-big;
   margin: 40px 0 70px;
-  position: relative;
   padding-left: 60px;
+  position: relative;
 
   &::before {
-    content: "";
-    width: 75px;
+    background: url('../assets/triangle.svg') no-repeat;
+    content: '';
     height: 100px;
-    position: absolute;
-    background: url("Assets/triangle.svg") no-repeat;
-    z-index: -1;
-    top: 50%;
     left: 0;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
+    width: 75px;
+    z-index: -1;
   }
 }

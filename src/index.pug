@@ -1,0 +1,40 @@
+doctype html
+
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title
+      | HTML & CSS Training
+    meta(name='description' content='training')
+    meta(name='author' content='Wolox')
+  body
+    #app
+      header.nav
+        img.wlogo(src='assets/wolox_logo.svg' alt='wolox')
+        h1.nav-title
+          | Developer tools
+      .container
+        div(v-for='platform in techs')
+          h1.title
+            | {{ platform.platform }}
+          .tech-list
+            .tech(
+              v-for='tech in platform.techs'
+              :key='tech.name'
+            )
+              img.tech-img(:src='tech.logo')
+              h2.tech-title
+                | {{ tech.name}}
+              p.tech-release
+                | {{ tech.release }}
+              p
+                | {{ tech.description }}
+      footer.footer
+        h3.footer-subtitle
+          | WE ARE GAME CHANGERS
+        img.footer-logo(src='assets/wolox_logo_white.svg')
+        p.footer-copyright
+          | Copyright 2018. Wolox. All rights reserved.
+    script(src='./index.js')
