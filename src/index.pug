@@ -16,6 +16,12 @@ html(lang='en')
         h1.nav-title
           | Developer tools
       .container
+        h1.title
+          | Find a technology
+        br
+        textarea(v-model='message' name='input-tech' @input='getTech(input-tech)')
+        p
+          | {{ message }}
         div(v-for='platform in techs')
           h1.title
             | {{ platform.platform }}

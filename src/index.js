@@ -12,5 +12,13 @@ const vm = new Vue({
   },
   created() {
     getTechs().then((response) => this.techs = response.data)
+  },
+  methods: {
+    getTech(name) {
+      for(tech in this.techs) {
+        if(name === tech.name) return tech
+        else return 'Ingrese el nombre de una tecnología'
+      }
+    }
   }
 })
