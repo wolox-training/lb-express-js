@@ -8,7 +8,8 @@ import './scss/application.scss'
 const vm = new Vue({
   el: '#app',
   data: {
-    techs: []
+    techs: [],
+    inputTech: ''
   },
   created() {
     getTechs().then((response) => this.techs = response.data)

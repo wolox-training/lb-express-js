@@ -19,9 +19,10 @@ html(lang='en')
         h1.title
           | Find a technology
         br
-        textarea(v-model='message' name='input-tech' @input='getTech(input-tech)')
+        input(v-model='inputTech' placeholder='edit me')
         p
-          | {{ message }}
+          | Message is: {{ inputTech }}
+        .tech(v-show=)
         div(v-for='platform in techs')
           h1.title
             | {{ platform.platform }}
