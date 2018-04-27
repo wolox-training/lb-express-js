@@ -21,31 +21,14 @@ html(lang='en')
         input.input-box(v-model='inputTech' placeholder='Technology' @input='getTech(inputTech)')
         div(v-if='inputTech.length > 0')
           .techs-lists(v-if='searchResults.length > 0')
-            .tech(v-for='tech in searchResults' :key='tech.name')
-              img.tech-img(:src='tech.logo')
-              h2.tech-title
-                | {{ tech.name }}
-              p.tech-release
-                | {{ tech.release }}
-              p
-                | {{ tech.description }}
+            tech(v-for='tech in platform.techs' :tech="tech" :key='tech.name')
           p(v-else)
             | No search results
         div(v-else v-for='platform in techs')
           h1.title
             | {{ platform.platform }}
           .tech-list
-            .tech(
-              v-for='tech in platform.techs'
-              :key='tech.name'
-            )
-              img.tech-img(:src='tech.logo')
-              h2.tech-title
-                | {{ tech.name}}
-              p.tech-release
-                | {{ tech.release }}
-              p
-                | {{ tech.description }}
+            tech(v-for='tech in platform.techs' :tech="tech" :key='tech.name')
       footer.footer
         h3.footer-subtitle
           | WE ARE GAME CHANGERS
