@@ -9,17 +9,17 @@ const vm = new Vue({
   el: '#app',
   data: {
     techs: [],
-    inputTech: ''
+    inputTech: '',
+    searchResults: []
   },
   created() {
     getTechs().then((response) => this.techs = response.data)
   },
   methods: {
     getTech(name) {
-      for(tech in this.techs) {
-        if(name === tech.name) return tech
-        else return 'Ingrese el nombre de una tecnología'
-      }
+      const techs = this.techs.map(platform => platform.techs)
+      const flattenTechs = [].concat.apply([], techs)
+      this.searchResults = flattenTechs.filter(tech => tech.name.toLowerCase().includes(this.inputTech.toLowerCase()))
     }
   }
 })
