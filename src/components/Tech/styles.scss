@@ -13,6 +13,11 @@
   text-align: center;
 }
 
+.tech-popup {
+  @extend .tech;
+  z-index: $zindex-popup;
+}
+
 .tech-img {
   height: 100px;
   margin-bottom: 10px;
