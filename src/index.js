@@ -25,7 +25,12 @@ const vm = new Vue({
 })
 
 Vue.component('tech', {
-  props: ['tech'],
+  props: {
+    tech: {
+      type: Object,
+      required: true
+    }
+  },
   template: `
     <div class="tech">
       <img class="tech-img" :src="this.tech.logo">
