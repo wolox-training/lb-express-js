@@ -1,6 +1,7 @@
 import Vue from 'vue'
 
 import { getTechs } from './services/techService'
+import Tech from './components/Tech'
 
 import './index.pug'
 import './scss/application.scss'
@@ -21,5 +22,6 @@ const vm = new Vue({
       const flattenTechs = [].concat.apply([], techs)
       this.searchResults = flattenTechs.filter(tech => tech.name.toLowerCase().includes(this.inputTech.toLowerCase()))
     }
-  }
+  },
+  components: [Tech]
 })
